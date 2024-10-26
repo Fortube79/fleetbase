@@ -58,6 +58,7 @@ services:
     volumes:
       - console-build:/fleetbase/console
     environment:
+      ALLOWED_ORIGINS: "*"
       ENVIRONMENT: development
       DATABASE_URL: "mysql://root@database/fleetbase"
       QUEUE_CONNECTION: redis
